@@ -1,0 +1,22 @@
+{
+  "name": "strapi-css-tricks",
+  "version": "1.0.0",
+  "description": "blogs on css-tricks using strapi & Nextjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tynguyen/strapi-css-tricks.git"
+  },
+  "keywords": [
+    "css-tricks"
+  ],
+  "author": "tynguyen.tech@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tynguyen/strapi-css-tricks/issues"
+  },
+  "homepage": "https://github.com/tynguyen/strapi-css-tricks#readme"
+}
