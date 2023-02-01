@@ -12,27 +12,26 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string"
     },
-    "Bio": {
-      "type": "text"
-    },
-    "Website": {
+    "bio": {
       "type": "string"
     },
-    "Twitter": {
+    "website": {
       "type": "string"
     },
-    "Photo": {
+    "twitter": {
+      "type": "string"
+    },
+    "photo": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "allowedTypes": [
         "images",
         "files",
-        "videos",
-        "audios"
+        "videos"
       ]
     },
     "articles": {
@@ -40,14 +39,8 @@
       "relation": "oneToMany",
       "target": "api::article.article"
     },
-    "Username": {
+    "username": {
       "type": "string"
-    },
-    "article": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::article.article",
-      "inversedBy": "Authors"
     }
   }
 }

@@ -1,22 +1,30 @@
 {
   "name": "strapi-css-tricks",
   "version": "1.0.0",
-  "description": "blogs on css-tricks using strapi & Nextjs",
+  "description": "CSS Tricks clone using Strapi and NextJS",
   "main": "index.js",
   "scripts": {
+    "frontend": "cd nextjs-frontend && npm run dev",
+    "backend": "cd strapi-api && npm run develop",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/tynguyen/strapi-css-tricks.git"
+    "url": "git+https://github.com/chyke007/strapi-css-tricks.git"
   },
-  "keywords": [
-    "css-tricks"
-  ],
-  "author": "tynguyen.tech@gmail.com",
+  "author": "Chibuike Nwachukwu",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tynguyen/strapi-css-tricks/issues"
+    "url": "https://github.com/chyke007/strapi-css-tricks/issues"
   },
-  "homepage": "https://github.com/tynguyen/strapi-css-tricks#readme"
+  "homepage": "https://github.com/chyke007/strapi-css-tricks#readme",
+  "dependencies": {
+    "concurrently": "^6.4.0",
+    "next": "^13.1.5",
+    "qs": "^6.11.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "scss": "^0.2.4"
+  }
 }

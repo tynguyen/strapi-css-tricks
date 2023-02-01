@@ -12,42 +12,42 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string"
     },
-    "Datetime": {
+    "date": {
       "type": "datetime"
     },
-    "Content": {
+    "content": {
       "type": "richtext"
     },
-    "Photo": {
+    "photo": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "allowedTypes": [
         "images",
         "files",
-        "videos",
-        "audios"
+        "videos"
       ]
     },
-    "Brief": {
+    "brief": {
       "type": "string"
     },
-    "Authors": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::author.author",
-      "mappedBy": "article"
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
     },
-    "Tags": {
+    "tags": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::tag.tag"
+      "relation": "manyToMany",
+      "target": "api::tag.tag",
+      "inversedBy": "articles"
     },
-    "Slug": {
-      "type": "uid"
+    "author": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::author.author"
     }
   }
 }
